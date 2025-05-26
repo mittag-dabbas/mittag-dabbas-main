@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #ffffff;
+			}
+			.container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				border: 1px solid #000;
+				width: 800px;
+				height: 300px;
+			}
+			.text-section {
+				flex: 1;
+				margin-right: 20px;
+			}
+			.text-section h1 {
+				margin: 0;
+				font-size: 28px; /* Adjusted to match the second image */
+				font-weight: bold;
+			}
+			.text-section p {
+				margin: 15px 0; /* Added vertical spacing */
+				font-size: 22px; /* Adjusted to match the second image */
+			}
+			.qr-section {
+				flex-shrink: 0;
+			}
+			.qr-section img {
+				width: 200px; /* Adjusted QR code size */
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="text-section">
+				<h1>${name}</h1>
+				<p>${itemName}</p>
+				<p>${address}</p>
+			</div>
+			<div class="qr-section">
+				<img
+					src="${qrCodeUrl}"
+					alt="QR Code"
+				/>
+			</div>
+		</div>
+	</body>
+</html>

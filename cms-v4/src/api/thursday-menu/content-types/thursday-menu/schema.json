@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thursday_menus",
+  "info": {
+    "singularName": "thursday-menu",
+    "pluralName": "thursday-menus",
+    "displayName": "Menu-Thursday",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MenuItem": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item",
+      "onDelete": "CASCADE"
+    }
+  }
+}

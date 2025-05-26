@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order-All",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "createdAt": {
+      "type": "datetime",
+      "customField": "relativeTime"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "UiD": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "orders"
+    },
+    "deliveryDate": {
+      "type": "datetime"
+    },
+    "MenuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.day-items"
+    },
+    "isOrderCancelled": {
+      "type": "boolean",
+      "default": false
+    },
+    "isOrderCompleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "SpecialRequest": {
+      "type": "text"
+    },
+    "GrandTotal": {
+      "type": "float"
+    },
+    "OrderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "ACCEPTED",
+        "CANCELLED",
+        "READY",
+        "ON-THE-WAY",
+        "DELIVERED"
+      ]
+    },
+    "feedbackEmailSent": {
+      "type": "boolean",
+      "default": false
+    },
+    "DabbaPointsUsed": {
+      "type": "biginteger"
+    },
+    "TotalItemContributingPrice": {
+      "type": "string"
+    }
+  }
+}

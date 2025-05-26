@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "Customer-All",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email"
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "LastLoginAt": {
+      "type": "datetime"
+    },
+    "UiD": {
+      "type": "string",
+      "unique": true
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "customer_delivery_addresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer-delivery-address.customer-delivery-address",
+      "mappedBy": "customer"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "Customer"
+    },
+    "DabbaPoints": {
+      "type": "float"
+    },
+    "customer_referral": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer-referral.customer-referral",
+      "inversedBy": "referring"
+    },
+    "referralRedeemedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer-referral.customer-referral",
+      "inversedBy": "isReferralRedeemedBy"
+    }
+  }
+}

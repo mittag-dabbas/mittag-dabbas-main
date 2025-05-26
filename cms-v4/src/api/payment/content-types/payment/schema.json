@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "Payments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CustomerEmail": {
+      "type": "email"
+    },
+    "SessionID": {
+      "type": "text"
+    },
+    "InvoiceID": {
+      "type": "text"
+    },
+    "InvoiceUrl": {
+      "type": "text"
+    },
+    "PaymentStatus": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "float"
+    },
+    "AmountTax": {
+      "type": "float"
+    },
+    "TransactionId": {
+      "type": "string"
+    }
+  }
+}

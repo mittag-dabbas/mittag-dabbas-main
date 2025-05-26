@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wednesday_menus",
+  "info": {
+    "singularName": "wednesday-menu",
+    "pluralName": "wednesday-menus",
+    "displayName": "Menu-Wednesday",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MenuItem": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item",
+      "onDelete": "CASCADE"
+    }
+  }
+}

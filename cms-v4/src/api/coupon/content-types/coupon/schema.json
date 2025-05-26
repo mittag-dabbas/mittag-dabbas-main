@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coupons",
+  "info": {
+    "singularName": "coupon",
+    "pluralName": "coupons",
+    "displayName": "Customer-Coupons",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CouponCode": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Expiry": {
+      "type": "date",
+      "required": true
+    },
+    "TypeOfCoupon": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.discount-amount",
+        "shared.discount-percentage"
+      ],
+      "required": true
+    },
+    "customer_referral": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer-referral.customer-referral",
+      "inversedBy": "coupon"
+    }
+  }
+}

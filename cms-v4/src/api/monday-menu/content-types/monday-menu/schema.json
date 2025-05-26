@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monday_menus",
+  "info": {
+    "singularName": "monday-menu",
+    "pluralName": "monday-menus",
+    "displayName": "Menu-Monday",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MenuItem": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item",
+      "onDelete": "CASCADE"
+    }
+  }
+}

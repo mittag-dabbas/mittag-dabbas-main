@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_delivery_addresses",
+  "info": {
+    "singularName": "customer-delivery-address",
+    "pluralName": "customer-delivery-addresses",
+    "displayName": "Customer Delivery Address",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "customer_delivery_addresses"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "PostalCode": {
+      "type": "string"
+    },
+    "isDefaultAddress": {
+      "type": "boolean",
+      "default": false
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_preferences",
+  "info": {
+    "singularName": "food-preference",
+    "pluralName": "food-preferences",
+    "displayName": "Food-Preference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

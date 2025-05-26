@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discount_globals",
+  "info": {
+    "singularName": "discount-global",
+    "pluralName": "discount-globals",
+    "displayName": "Discount-Global"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DiscountPercent": {
+      "type": "decimal"
+    }
+  }
+}

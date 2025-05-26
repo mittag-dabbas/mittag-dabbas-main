@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "OfficeAddress": {
+      "type": "text"
+    },
+    "AnythingElse": {
+      "type": "text"
+    },
+    "DailyOfficeMeal": {
+      "type": "boolean"
+    },
+    "CorporateCatering": {
+      "type": "boolean"
+    }
+  }
+}

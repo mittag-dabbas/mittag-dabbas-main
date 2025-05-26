@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "friday_menus",
+  "info": {
+    "singularName": "friday-menu",
+    "pluralName": "friday-menus",
+    "displayName": "Menu-Friday",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MenuItem": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}

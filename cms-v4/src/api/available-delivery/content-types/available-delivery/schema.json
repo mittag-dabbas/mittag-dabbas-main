@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "available_deliveries",
+  "info": {
+    "singularName": "available-delivery",
+    "pluralName": "available-deliveries",
+    "displayName": "Available Delivery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StreetName": {
+      "type": "string"
+    },
+    "StreetNumber": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "PostalCode": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "Menu Items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ItemImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "OriginalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "FoodPreference": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::food-preference.food-preference"
+    },
+    "SpiceLevel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::spice-level.spice-level"
+    },
+    "Allergens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::allergen.allergen"
+    },
+    "OfferedPrice": {
+      "type": "decimal"
+    },
+    "isMenuOutOfStock": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

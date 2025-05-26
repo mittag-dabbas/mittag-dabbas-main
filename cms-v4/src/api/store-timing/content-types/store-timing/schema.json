@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "store_timings",
+  "info": {
+    "singularName": "store-timing",
+    "pluralName": "store-timings",
+    "displayName": "Store-timing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ClosingTime": {
+      "type": "time",
+      "default": "20:00",
+      "required": true
+    },
+    "cutoffType": {
+      "type": "enumeration",
+      "enum": ["evening", "morning"],
+      "default": "evening",
+      "required": true
+    },
+    "cutoffTime": {
+      "type": "time",
+      "default": "20:00",
+      "required": true
+    }
+  }
+}

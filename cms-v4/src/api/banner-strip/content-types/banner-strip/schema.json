@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_strips",
+  "info": {
+    "singularName": "banner-strip",
+    "pluralName": "banner-strips",
+    "displayName": "BannerStrip",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "text"
+    }
+  }
+}

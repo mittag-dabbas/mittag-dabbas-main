@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spice_levels",
+  "info": {
+    "singularName": "spice-level",
+    "pluralName": "spice-levels",
+    "displayName": "Food-SpiceLevel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

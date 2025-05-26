@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_subsidaries",
+  "info": {
+    "singularName": "company-subsidary",
+    "pluralName": "company-subsidaries",
+    "displayName": "Company Subsidary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CompanyName": {
+      "type": "string"
+    },
+    "Domain": {
+      "type": "string"
+    },
+    "DiscountPercent": {
+      "type": "float"
+    },
+    "Email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.email"
+    },
+    "MenuItemPrice": {
+      "type": "float"
+    }
+  }
+}

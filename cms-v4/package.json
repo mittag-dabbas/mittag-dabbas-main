@@ -1,0 +1,54 @@
+{
+  "name": "foodadvisor",
+  "private": true,
+  "version": "2.0.1",
+  "description": "Official Strapi Demo Application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "seed": "node script/seed.js",
+    "deploy": "strapi deploy"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^1.1.0",
+    "@offset-dev/strapi-calendar": "^0.0.10",
+    "@strapi/plugin-i18n": "4.25.8",
+    "@strapi/plugin-seo": "^1.9.4",
+    "@strapi/plugin-users-permissions": "4.25.8",
+    "@strapi/strapi": "4.25.8",
+    "@webbio/strapi-plugin-scheduler": "^0.1.2",
+    "better-sqlite3": "^7.6.2",
+    "fs-extra": "^10.0.0",
+    "pg": "^8.13.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-gtm-module": "^0.0.5",
+    "strapi-plugin-email-designer": "^2.2.1",
+    "strapi-plugin-import-export-entries": "^1.23.1",
+    "strapi-stripe": "^3.4.1",
+    "styled-components": "^5.2.1",
+    "unzip-stream": "^0.3.1",
+    "uuid-v4": "^0.1.0"
+  },
+  "overrides": {
+    "@radix-ui/react-dismissable-layer": "1.0.5",
+    "@strapi/design-system": {
+      "@radix-ui/react-dropdown-menu": "2.0.6"
+    }
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "9267dde0-dde7-4f0f-a715-79e91590dca5"
+  },
+  "engines": {
+    "node": ">=14.x.x <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

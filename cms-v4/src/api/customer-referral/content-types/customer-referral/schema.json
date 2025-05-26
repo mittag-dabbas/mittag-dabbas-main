@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_referrals",
+  "info": {
+    "singularName": "customer-referral",
+    "pluralName": "customer-referrals",
+    "displayName": "Customer-Referral",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "referrer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "referring": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer.customer",
+      "mappedBy": "customer_referral"
+    },
+    "coupon": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::coupon.coupon",
+      "mappedBy": "customer_referral"
+    },
+    "isReferralRedeemedBy": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::customer.customer",
+      "mappedBy": "referralRedeemedBy"
+    },
+    "timesIUsedThisCoupon": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_shared_day_items",
+  "info": {
+    "displayName": "DayItems",
+    "icon": "cup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "TotalPrice": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "Allergens": {
+      "type": "string"
+    },
+    "FoodPreference": {
+      "type": "string"
+    },
+    "SpiceLevel": {
+      "type": "string"
+    },
+    "Categories": {
+      "type": "string"
+    },
+    "LabelImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "ItemImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "itemContribution": {
+      "type": "string"
+    }
+  }
+}
