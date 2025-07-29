@@ -12,7 +12,10 @@ module.exports = [
         "https://www.mittag-dabbas.com",
         "https://www.competent-excitement-ce7f862fc3.strapiapp.com",
         "https://competent-excitement-ce7f862fc3.strapiapp.com",
-        "competent-excitement-ce7f862fc3.strapiapp.com"
+        "competent-excitement-ce7f862fc3.strapiapp.com",
+        "https://mittag-dabbas-main.vercel.app",
+        "https://www.mittag-dabbas-main.vercel.app",
+        "mittag-dabbas-main.vercel.app"
       ],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
       credentials: true,
@@ -45,7 +48,10 @@ module.exports = [
             "admin.mittag-dabbas.com",
             "https://competent-excitement-ce7f862fc3.strapiapp.com",
             "https://www.competent-excitement-ce7f862fc3.strapiapp.com",
-            "competent-excitement-ce7f862fc3.strapiapp.com"
+            "competent-excitement-ce7f862fc3.strapiapp.com",
+            "https://mittag-dabbas-main.vercel.app",
+            "https://www.mittag-dabbas-main.vercel.app",
+            "mittag-dabbas-main.vercel.app"
           ],
         },
       },
