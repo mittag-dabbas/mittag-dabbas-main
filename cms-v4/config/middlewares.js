@@ -10,6 +10,7 @@ module.exports = [
         "https://localhost:3000",
         "https://mittag-dabbas.com",
         "https://www.mittag-dabbas.com",
+        "https://competent-excitement-ce7f862fc3.strapiapp.com",
         "*",
       ],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
@@ -41,6 +42,7 @@ module.exports = [
             "blob:",
             "*", // Add this line to allow all sources
             "admin.mittag-dabbas.com",
+            "https://competent-excitement-ce7f862fc3.strapiapp.com"
           ],
         },
       },
