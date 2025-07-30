@@ -4,6 +4,7 @@ import RelativeTime from "./extensions/components/RelativeTime"; // Import your 
 
 export default {
   config: {
+    myCustomVar: process.env.STRAPI_ADMIN_CLIENT_PREVIEW_SECRET,
     locales: ["fr"],
     translations: {
       fr: {
@@ -17,6 +18,7 @@ export default {
     },
   },
   bootstrap(app) {
+    console.log(app.getConfig('myCustomVar'));
     app.injectContentManagerComponent("editView", "right-links", {
       name: "PreviewButton",
       Component: PreviewButton,
@@ -31,4 +33,5 @@ export default {
       Component: RelativeTime, // Attach your custom RelativeTime component
     });
   },
+  
 };
