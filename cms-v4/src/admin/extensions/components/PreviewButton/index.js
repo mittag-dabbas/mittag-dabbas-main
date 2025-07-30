@@ -17,7 +17,7 @@ const PreviewButton = () => {
 
   const clientUrl = window.strapi?.backendURL || 'http://localhost:1337';
   // const previewSecret = process.env.STRAPI_ADMIN_CLIENT_PREVIEW_SECRET;
-  const previewSecret = strapi.getConfig('myCustomVar') || 'Test123';
+  const previewSecret = 'Test123';
   if (!clientUrl || !previewSecret) {
     return null;
   }
